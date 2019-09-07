@@ -11,7 +11,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {	
-		npm config set registry http://registry.npmjs.org
                 sh 'npm install'
             }
         }
